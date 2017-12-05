@@ -1,3 +1,4 @@
+
 from __future__ import unicode_literals
 from django.shortcuts import render
 from django.views.generic import TemplateView, FormView
@@ -6,9 +7,11 @@ from django.views.generic import TemplateView, FormView
 
 
 class HomeView(TemplateView):
-    template_name = 'index.html'
+    template_name = 'base.html'
 
-class OsirixView(FormView):
+class OsirixView(TemplateView):
 
-    template_name = 'osirixpage.html'
+    template_name = "osirixpage.html"
+
+
 

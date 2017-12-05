@@ -19,6 +19,7 @@ from catalog.views import HomeView, OsirixView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', HomeView.as_view()), 
-    url(r'^S', OsirixView.as_view()),
+    url(r'^$', HomeView.as_view()),
+    url(r'^osirixpage/$', OsirixView.as_view(), name="osirixpage"),
+  
 ]

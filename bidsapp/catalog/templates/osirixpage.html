@@ -1,8 +1,7 @@
 
-<html>
+{% extends 'base.html' %}
 
-
-<body>
+{% block content %}
 
 <form action="/osirix_scraper", method="post">
 
@@ -14,7 +13,4 @@
   <input type="submit" value="OK">
 </form> 
 
-</body>
-
-</html>
-
+{% endblock %}
