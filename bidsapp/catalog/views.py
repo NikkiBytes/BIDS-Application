@@ -11,7 +11,6 @@ class HomeView(TemplateView):
 class OsirixView(FormView):
 
     template_name = 'osiripage.html'
-    form_class OsirixForm
     success_url = '/success/'
 
     def form_valid(self, form):
